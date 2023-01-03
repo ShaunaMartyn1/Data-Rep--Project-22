@@ -1,0 +1,28 @@
+POST http://localhost:3001/api/film
+Content-Type: application/json
+//send info to the database - not working info not recieved in mongodb
+{
+    "film": "This is the second film"
+}
+
+###
+
+GET http://localhost:3001/api/films 
+Content-Type: application/json
+###
+
+GET http://localhost:3001/api/film/:id
+Content-Type: application/json
+{
+    "film": "This is the first film updated"
+}
+###
+//add in after local host 
+DELETE http://localhost:3001/api/film/:id
+Content-Type: application/json
+{
+    "film": "This is the first film updated"
+}
+
+
+
